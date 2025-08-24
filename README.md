@@ -2,7 +2,7 @@
 
 Get started with [Blinksy][blinksy] LED control using a [Gledopto GL-C-016WL-D controller](https://www.aliexpress.com/item/1005008707989546.html) and [BTF-Lighting LED rope](https://www.aliexpress.com/item/1005006239466933.html)
 
-https://github.com/user-attachments/assets/d7e08d48-9f22-43b5-afdc-439b4eaefe98
+https://github.com/user-attachments/assets/98f10a10-24f9-42b4-9fa8-989a60fb93fc
 
 The initial project is setup to run a scrolling rainbow on a 1 meter WS2812B strip of 50 LEDs/meter.
 
