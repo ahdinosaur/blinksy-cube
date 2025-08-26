@@ -17,11 +17,11 @@ The initial project is setup to run a scrolling rainbow on a 1 meter WS2812B str
   - The pattern will compute colors for each LED based on its position
 - Setup a [`driver`][driver] to send each frame of colors to your LEDs, using our built-in [`drivers`][drivers] library.
 
-[layout]: https://docs.rs/blinksy/0.6/blinksy/layout/index.html
-[pattern]: https://docs.rs/blinksy/0.6/blinksy/pattern/index.html
-[patterns]: https://docs.rs/blinksy/0.6/blinksy/patterns/index.html
-[driver]: https://docs.rs/blinksy/0.6/blinksy/driver/index.html
-[drivers]: https://docs.rs/blinksy/0.6/blinksy/drivers/index.html
+[layout]: https://docs.rs/blinksy/0.8/blinksy/layout/index.html
+[pattern]: https://docs.rs/blinksy/0.8/blinksy/pattern/index.html
+[patterns]: https://docs.rs/blinksy/0.8/blinksy/patterns/index.html
+[driver]: https://docs.rs/blinksy/0.8/blinksy/driver/index.html
+[drivers]: https://docs.rs/blinksy/0.8/blinksy/drivers/index.html
 
 ### Bill of Materials
 
@@ -53,14 +53,14 @@ cargo install just
 - Install [`espup`][espup]
 
 ```shell
-cargo install espup
+cargo install espup@'^0.15' --locked
 espup install
 ```
 
 - Install [`espflash`][espflash]
 
 ```shell
-cargo install espflash
+cargo install espflash@'^4' --locked
 ```
 
 - On Linux, add user to `dialout` group
