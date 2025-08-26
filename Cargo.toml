@@ -1,16 +1,16 @@
 [package]
-name = "blinksy-quickstart-gledopto"
+name = "blinksy-quickstart-1d-rope"
 version = "0.1.0"
 edition = "2024"
 license = "MIT OR Apache-2.0"
 publish = false
 
 [dependencies]
-blinksy = "0.6"
-blinksy-desktop = { version = "0.6", optional = true }
+blinksy = "0.8"
+blinksy-desktop = { version = "0.8", optional = true }
 cfg-iif = "0.2"
-esp-hal = { version = "1.0.0-beta.0", optional = true }
-gledopto = { version = "0.6", features = ["gl_c_016wl_d"], optional = true }
+esp-hal = { version = "1.0.0-rc.0", optional = true }
+gledopto = { version = "0.8", features = ["gl_c_016wl_d"], optional = true }
 
 [features]
 default = ["desktop"]
