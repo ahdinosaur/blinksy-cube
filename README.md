@@ -81,6 +81,32 @@ sudo adduser $USER dialout
 [espflash]: https://docs.esp-rs.org/book/tooling/espflash.html
 [esp-env-vars]: https://docs.esp-rs.org/book/installation/riscv-and-xtensa.html#3-set-up-the-environment-variables
 
+#### CH341 Driver
+
+The Gledopto board has a CH341 USB-to-serial converter, to help your computer talk to the board.
+
+This should work out-of-the-box with Linux, but for MacOS and Windows you will need to install a driver.
+
+##### MacOS
+
+On MacOS, install [CH341 driver](https://www.wch-ic.com/downloads/CH341SER_MAC_ZIP.html)
+
+See ["MacOS" section of Sparkfun guide](https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all#mac-osx) for more details.
+
+##### Windows
+
+On Windows, install [CH341 driver](https://www.wch-ic.com/downloads/CH341SER_EXE.html)
+
+See ["Windows 7/10" section of Sparkfun guide](https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all#windows-710) for more details.
+
+#### USB Cable
+
+For some reason, there's been issues with people using a USB-C to USB-C cable to plug into the Gledopto.
+
+If you only have USB-C outputs, try a USB-C-to-USB-A dongle, then a USB-A to USB-C cable.
+
+🤷
+
 ### Run on microcontroller
 
 ```shell
