@@ -1,7 +1,7 @@
 use blinksy::{
     color::{Hsv, HsvHueRainbow},
-    dimension::Dim1d,
     layout::Layout1d,
+    markers::Dim1d,
     pattern::Pattern,
 };
 

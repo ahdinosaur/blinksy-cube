@@ -6,11 +6,11 @@ license = "MIT OR Apache-2.0"
 publish = false
 
 [dependencies]
-blinksy = "0.8"
-blinksy-desktop = { version = "0.8", optional = true }
+blinksy = "0.10"
+blinksy-desktop = { version = "0.10", optional = true }
 cfg-iif = "0.2"
 esp-hal = { version = "1.0.0-rc.0", optional = true }
-gledopto = { version = "0.8", features = ["gl_c_016wl_d"], optional = true }
+gledopto = { version = "0.10", features = ["gl_c_016wl_d"], optional = true }
 
 [features]
 default = ["desktop"]
