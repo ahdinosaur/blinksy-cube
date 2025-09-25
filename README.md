@@ -63,10 +63,10 @@ espup install
 cargo install espflash@'^4' --locked
 ```
 
-- On Linux, add user to `dialout` group
+- On Linux, add user to `dialout` group (or `uucp` on Arch)
 
 ```shell
-sudo adduser $USER dialout
+sudo usermod -a -G dialout $USER
 ```
 
 - Source the [ESP environment variables][esp-env-vars]
