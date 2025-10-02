@@ -1,6 +1,6 @@
 # LED Cube with [Blinksy][blinksy] 🧊🌈
 
-Make an LED cube with 3D animations using the [Blinksy Rust LED library][blinksy], a [Gledopto GL-C-017WL-D controller](https://www.aliexpress.com/item/1005008906312178.html), 6x LED panels, and a custom 3D-printed cube.
+Make an LED cube with 3D animations using the [Blinksy Rust LED library][blinksy], a [Gledopto GL-C-016WL-D controller](https://www.aliexpress.com/item/1005008707989546.html), 6x LED panels, and a custom 3D-printed cube.
 
 https://github.com/user-attachments/assets/36a2c6ad-7ae6-4498-85b3-ed76d0b62264
 
@@ -14,8 +14,7 @@ TODO video
 
 To get started now, buy:
 
-- Gledopto GL-C-017WL-D: [AliExpress](https://www.aliexpress.com/item/1005008906312178.html)
-  - Note: At the moment, Blinksy only supports a single channel output, but this future-proof hardware supports up to 4 parallel outputs.
+- Gledopto GL-C-016WL-D: [AliExpress](https://www.aliexpress.com/item/1005008707989546.html), [Amazon](https://www.amazon.com/Controller-Dynamic-Lighting-Download-Addressable/dp/B0DT9QM25R)
 - 6x BTF-LIGHTING WS2812B ECO 16x16 LED Panel: [AliExpress](https://www.aliexpress.com/item/32944813367.html)
 - A BTF-LIGHTING 5V 10A power supply: [AliExpress](https://www.aliexpress.com/item/32810906485.html)
 - 72x 3x1mm magnets
