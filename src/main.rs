@@ -5,25 +5,23 @@
 compile_error!("features \"mcu\" and \"desktop\" are mutually exclusive");
 
 use blinksy::{
-    layout1d,
-    markers::{Blocking, Dim1d},
+    markers::{Blocking, Dim3d},
+    patterns::noise::{noise_fns, Noise3d, NoiseParams},
     ControlBuilder,
 };
 
 #[cfg(feature = "mcu")]
 gledopto::bootloader!();
 
-mod patterns;
+mod layout;
 
-use crate::patterns::rainbow::{Rainbow, RainbowParams};
+use crate::layout::Layout;
 
-layout1d!(Layout, 50);
+type Pattern = Noise3d<noise_fns::Perlin>;
+type PatternParams = NoiseParams;
 
-type Pattern = Rainbow;
-type PatternParams = RainbowParams;
-
-fn setup_control() -> ControlBuilder<Dim1d, Blocking, Layout, Pattern, ()> {
-    ControlBuilder::new_1d()
+fn setup_control() -> ControlBuilder<Dim3d, Blocking, Layout, Pattern, ()> {
+    ControlBuilder::new_3d()
         .with_layout::<Layout>()
         .with_pattern::<Pattern>(PatternParams::default())
 }
@@ -47,7 +45,7 @@ fn main() -> ! {
 
 #[cfg(feature = "desktop")]
 fn main() {
-    blinksy_desktop::driver::Desktop::new_1d::<Layout>().start(|driver| {
+    blinksy_desktop::driver::Desktop::new_3d::<Layout>().start(|driver| {
         let mut control = setup_control().with_driver(driver).build();
 
         loop {
