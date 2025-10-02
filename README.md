@@ -1,4 +1,4 @@
-# LED Cube with [Blinksy][blinksy]  🌈
+# LED Cube with [Blinksy][blinksy] 🧊🌈
 
 Make an LED cube with 3D animations using the [Blinksy Rust LED library][blinksy], a [Gledopto GL-C-017WL-D controller](https://www.aliexpress.com/item/1005008906312178.html), 6x LED panels, and a custom 3D-printed cube.
 
